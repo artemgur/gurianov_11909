@@ -1,0 +1,56 @@
+﻿.header_button {
+    float: right;
+    margin: 4px;
+}
+#logo {
+    margin: 13px 60px 20px 15px;
+    float: left;
+}
+#search_form {
+    width: 60%;
+    float: left;
+}
+#search {
+    margin: 8px 0px 20px 10px;
+    height: 24px;
+    width: 60%;
+    float: left;
+}
+#search_button {
+    margin: 8px 20px 20px 0px;
+    width: 65px;
+    height: 30px;
+    background-image: url(search.png);
+    border: none;
+    cursor: pointer;
+    float: left;
+}
+.menu_button {
+    float:left;
+}
+#header_div {
+    height:60px;
+    width:100%;
+}
+#user {
+    float: right;
+    margin: 8px 20px 10px 20px;
+}
+#menu {
+    margin: 6px 6px 6px 17px;
+    float: left;
+}
+#videos_div {
+    position: fixed;
+    top: 60px;
+    left: 85px;
+    width: calc(100% - 75px);
+    height: calc(100% - 60px);
+    float: left;
+    background-color: #f8f8f8;
+}
+#left_menu_div {
+    width: 85px;
+    height: calc(100% - 60px);
+    float: left;
+}

@@ -1,0 +1,15 @@
+	Покрывающий индекс: SELECT name FROM indexes_test WHERE 'g' < name AND name < 'i'
+без индекса:  0.00..27357.85
+с индексом:   2775.08..16336.96
+
+	Сортировка: SELECT * FROM indexes_test ORDER BY name ASC;
+без индекса:  72082.96..169310.88
+с индексом:   0.42..88728.31
+
+	Индекс по условию: SELECT * FROM indexes_test WHERE EXTRACT(CENTURY FROM date) = 19 AND EXTRACT(DECADE FROM date) > 182
+без индекса:  1000.00..21858.03
+с индексом:   81.84..9579.64
+
+	Индекс по набору полей: SELECT * FROM indexes_test WHERE 'g' < name AND name < 'i' AND EXTRACT(CENTURY FROM date) > 19
+без индекса:  1000.00..24366.63
+с индексом:   3121.70..17084.88

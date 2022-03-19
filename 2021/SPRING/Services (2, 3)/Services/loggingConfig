@@ -1,0 +1,1 @@
+Services.ILogger;Services.ConsoleLogger;transient

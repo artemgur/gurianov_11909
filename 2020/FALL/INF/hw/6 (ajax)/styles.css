@@ -1,0 +1,43 @@
+li{
+    display:inline;
+    list-style-type:none;
+    background-color:#688A08;
+    padding:10px;
+    border-radius:5px 5px 0px 0px;
+    color:#292A0A;
+    font-weight:bold;
+    cursor:pointer;
+    height: 20px;
+}
+
+.not_selected
+{
+    background-color:#688A08;
+    color:#292A0A;
+}
+.selected
+{
+    background-color:#D0F5A9;
+    color:#292A0A;
+}
+body{
+    background-color: #2E3B0B;
+}
+#tabs_div{
+    margin-top: 17px;
+    width: 100%;
+}
+#content{
+    background-color: #BEF781;
+    border-radius:0px 5px 5px 5px;
+    position: absolute;
+    top: 45px;
+    height: calc(100vh - 50px);
+    width: calc(100vw - 30px);
+    padding:10px;
+    font-weight: bold;
+}
+#photo1{
+    max-height: 400px;
+    width: auto;
+}

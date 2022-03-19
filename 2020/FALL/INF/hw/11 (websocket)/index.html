@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+		var ws = null;
+		function WebSocketTest()
+		{
+			if ("WebSocket" in window) {
+				if (ws === null)
+				{
+					report_message("WebSocket поддерживается вашим браузером!");
+					// Открыть WebSocket
+					setTimeout(function () {
+						ws = new WebSocket("ws://localhost:8080");
+						ws.onopen = function () {
+							// WebSocket отправляет данные с помощью send()
+							ws.send(document.getElementById("txt").value);
+							report_message('Сообщение отправляется...');
+						};
+						ws.onmessage = function (evt) {
+							report_message("Получен ответ");
+							var received_msg = evt.data;
+							report(received_msg);
+						};
+						ws.onclose = function () {
+							// WebSocket отключен
+							report_message("Соединение отключено...");
+							ws = null;
+						};
+					}, 1000);
+				}
+				else 
+				{
+					ws.send(document.getElementById("txt").value);
+					report_message('Сообщение отправляется...');
+				}
+			}
+			else {
+				// Браузер не поддерживает WebSocket
+				alert("WebSocket не поддерживается вашим браузером!");
+				}
+		}
+        var report = function (msg) {
+            var info = document.createElement('p');
+            info.textContent = msg;
+			document.getElementById("ws").innerHTML = info.outerHTML;
+        }
+		var report_message = function (msg, clear = true) {
+            var info = document.createElement('p');
+            info.innerHTML = msg;
+			objDiv = document.getElementById("message");
+			objDiv.appendChild(info);
+			objDiv.scrollTop = objDiv.scrollHeight;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="txt"/>
+    <input type="button" value="Test" onclick="WebSocketTest()"/>
+	<p>Result: </p>
+	<div id="ws"></div>
+	<p>Log:</p>
+	<div id="message" style="height: 200px; overflow: auto;"></div>
+</body>
+</html>

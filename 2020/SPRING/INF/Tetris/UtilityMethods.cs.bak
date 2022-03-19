@@ -1,0 +1,13 @@
+﻿using System.Windows.Forms;
+
+namespace Tetris
+{
+    public static class UtilityMethods
+    {
+        public static int GetHeaderSize(this Form form)
+        {
+            var clientHeight = form.ClientRectangle.Height;
+            return form.Height - clientHeight;
+        }
+    }
+}

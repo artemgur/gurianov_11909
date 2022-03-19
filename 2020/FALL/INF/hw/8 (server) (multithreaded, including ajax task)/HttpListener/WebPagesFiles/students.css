@@ -1,0 +1,32 @@
+table, th, td{
+    border: black solid 1px;
+    border-collapse: collapse;
+}
+#students{
+    width: 100%;
+}
+input{
+    /*TODO*/
+}
+.clickable_cell {
+    background-color: lightgray;
+}
+.clickable_cell:hover{
+    background-color: darkgray;
+}
+.clickable_cell:active{
+    background-color: gray;
+}
+.add_student_field{
+    width: 95%;
+    height: 100%;
+    border-style: none;
+}
+.nothing_to_save{
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}

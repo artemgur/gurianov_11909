@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth", "Auth\Auth.csproj", "{43D52525-0C9D-40B9-8A2F-6F2E62A53BE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{40742159-43D3-4373-B643-3F0599B08CA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43D52525-0C9D-40B9-8A2F-6F2E62A53BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43D52525-0C9D-40B9-8A2F-6F2E62A53BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43D52525-0C9D-40B9-8A2F-6F2E62A53BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43D52525-0C9D-40B9-8A2F-6F2E62A53BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40742159-43D3-4373-B643-3F0599B08CA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40742159-43D3-4373-B643-3F0599B08CA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40742159-43D3-4373-B643-3F0599B08CA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40742159-43D3-4373-B643-3F0599B08CA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {022E2623-0A01-449E-B956-639A3029564B}
+	EndGlobalSection
+EndGlobal

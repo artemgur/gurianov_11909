@@ -1,0 +1,5 @@
+.idea/**
+bin/Debug/**
+bin/obj/**
+obj/**
+*.user

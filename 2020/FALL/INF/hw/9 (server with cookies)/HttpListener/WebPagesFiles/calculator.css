@@ -1,0 +1,34 @@
+:root{
+    --button-width: 50px;
+    --offset: 7px;
+}
+
+button{
+    width: var(--button-width);
+    height: 40px;
+}
+#number {
+    width: calc(var(--button-width) * 4 + var(--offset));
+    font-size: 30px;
+    margin: 0 5px;
+    border: black solid 1px;
+}
+#previous_number{
+    width: calc(var(--button-width) * 4 - 30px + var(--offset));
+    font-size: 15px;
+    margin: 0;
+    float: left;
+}
+#operation{
+    width: 30px;
+    margin: 0;
+    font-size: 15px;
+}
+#prev_operation {
+    width: calc(var(--button-width) * 4 + var(--offset));
+    margin: 0 5px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    border: black solid 1px;
+}

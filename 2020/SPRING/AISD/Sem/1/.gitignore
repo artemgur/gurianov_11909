@@ -1,0 +1,4 @@
+.idea/**
+bin/Debug/netcoreapp2.1/**
+!bin/Debug/netcoreapp2.1/*.txt
+obj/**

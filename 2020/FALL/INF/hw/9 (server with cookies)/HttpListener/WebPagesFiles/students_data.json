@@ -1,0 +1,38 @@
+[
+{
+	"stud": "11-11",
+	"name": "Иван",
+	"surname": "Иванов",
+	"patronymic": "Иванович",
+	"birth_date": "01.01.2000",
+	"group": "11-111",
+	"email": "ivan@example.com"
+},
+{
+	"stud": "11-12",
+	"name": "Петр",
+	"surname": "Петров",
+	"patronymic": "Андреевич",
+	"birth_date": "01.05.2000",
+	"group": "11-114",
+	"email": "petr@example.com"
+},
+{
+	"stud": "11-15",
+	"name": "Артем",
+	"surname": "Гурьянов",
+	"patronymic": "Игоревич",
+	"birth_date": "26.06.2001",
+	"group": "11-115",
+	"email": "artemgur01@gmail.com"
+},
+{
+	"stud": "11-14",
+	"name": "Елена",
+	"surname": "Борисова",
+	"patronymic": "Олеговна",
+	"birth_date": "12.08.2000",
+	"group": "11-118",
+	"email": "elena@example.com"
+}
+]
